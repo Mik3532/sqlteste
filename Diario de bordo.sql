@@ -96,4 +96,67 @@ ADD CONSTRAINT CHECK (nota2 <= 20),
 ADD CONSTRAINT CHECK (nota3 <= 20),
 ADD CONSTRAINT CHECK (nota4 <= 20);
 
+show tables;
 
+
+ALTER TABLE aluno ADD COLUMN Nome VARCHAR(80);
+ALTER TABLE aluno ADD COLUMN tempoestudo INT NOT NULL;
+ALTER TABLE aluno ADD COLUMN rendafamiliar DECIMAL(10, 2);
+
+describe aluno;
+
+select *  from aluno;
+
+INSERT INTO aluno (ra, Nome, tempoestudo, rendafamiliar) VALUES
+('00000026', 'Marcelo Silva', 11, 3100.00),
+('00000027', 'Elaine Santos', 10, 2900.00),
+('00000028', 'Roberto Souza', 8, 2800.00),
+('00000029', 'Tatiana Lima', 7, 2500.00),
+('00000030', 'Gustavo Oliveira', 12, 3200.00),
+('00000031', 'Natália Rocha', 9, 2700.00),
+('00000032', 'Thiago Ramos', 11, 2900.00),
+('00000033', 'Cláudia Ribeiro', 10, 2500.00),
+('00000034', 'Renato Martins', 8, 2700.00),
+('00000035', 'Vanessa Nogueira', 7, 2300.00),
+('00000036', 'Daniel Barbosa', 12, 3100.00),
+('00000037', 'Simone Pereira', 9, 2900.00),
+('00000038', 'Alex Cardoso', 10, 3000.00),
+('00000039', 'Marcos Souza', 8, 2800.00),
+('00000040', 'Renata Almeida', 7, 2500.00),
+('00000041', 'Bruna Vieira', 12, 3200.00),
+('00000042', 'César Mendes', 11, 2700.00),
+('00000043', 'Denise Farias', 10, 2900.00),
+('00000044', 'Fábio Lima', 8, 2400.00),
+('00000045', 'Evelyn Ferreira', 7, 2600.00),
+('00000046', 'Luiz Costa', 9, 2500.00),
+('00000047', 'Cristina Oliveira', 12, 3000.00),
+('00000048', 'Guilherme Gonçalves', 11, 3100.00),
+('00000049', 'Priscila Silva', 10, 2900.00),
+('00000050', 'Otávio Santos', 8, 2800.00),
+('00000051', 'Alessandra Monteiro', 10, 2600.00),
+('00000052', 'Roberto Azevedo', 11, 2700.00),
+('00000053', 'Carolina Dias', 12, 2800.00),
+('00000054', 'Sérgio Lopes', 9, 2900.00),
+('00000055', 'Fernanda Melo', 8, 3000.00),
+('00000056', 'Rogério Batista', 7, 3100.00),
+('00000057', 'Adriana Teixeira', 10, 3200.00),
+('00000058', 'Paula Castro', 11, 3300.00),
+('00000059', 'Vinícius Neves', 12, 3400.00),
+('00000060', 'Helena Correia', 9, 3500.00),
+('00000061', 'Bruno Silva', 8, 3600.00),
+('00000062', 'Mariana Moreira', 7, 3700.00),
+('00000063', 'Anderson Rodrigues', 10, 3800.00),
+('00000064', 'Patrícia Fernandes', 11, 3900.00),
+('00000065', 'Thiago Martins', 12, 4000.00),
+('00000066', 'Viviane Souza', 9, 4100.00),
+('00000067', 'Cássio Oliveira', 8, 4200.00),
+('00000068', 'Aline Almeida', 7, 4300.00),
+('00000069', 'Fernando Costa', 10, 4400.00),
+('00000070', 'Sabrina Lima', 11, 4500.00),
+('00000071', 'Renato Ribeiro', 12, 4600.00),
+('00000072', 'Juliana Santos', 9, 4700.00),
+('00000073', 'Gustavo Araújo', 8, 4800.00),
+('00000074', 'Camila Pires', 7, 4900.00),
+('00000075', 'Daniela Nunes', 10, 5000.00);
+
+SELECT * FROM aluno;
